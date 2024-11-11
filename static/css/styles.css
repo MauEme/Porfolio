@@ -1,0 +1,72 @@
+:root{
+    --bg-color: ;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "NTR", sans-serif;
+}
+
+/* HEADER //////////////////////////*/
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: #006691;
+}
+
+nav{
+    display: flex; 
+    gap: 30vw;
+    align-items: center;
+}
+
+#nav-links{
+    display: flex;
+    gap: 3vw;
+}
+
+#nav-links a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+#logo{
+    font-size: 3rem;
+}
+
+#logo a{
+    color: aliceblue;
+    font-weight: 500;
+}
+
+/* SECTION BANNER /////////////////////////*/
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh;
+    background-color: #ff8d58;
+    color: aliceblue;
+}
+
+#my-pic img{
+    border-radius: 60%;
+    border: solid rgb(255, 251, 45) 4px;
+}
+
+.banner h2{
+    font-size: 4rem;
+}
+
+.banner h3{
+    font-size: 1.5rem;
+}
+
+
+
