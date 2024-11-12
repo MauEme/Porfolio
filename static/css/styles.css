@@ -2,6 +2,9 @@
     --sections-titles: 4rem;
     --primary-font-color: RGB(44, 62, 80);
     --bg-color-primary: aliceblue;
+    --bg-color-secondary: #ff8d58;
+    --gray-color-font: RGB(44, 62, 80);
+    
 }
 
 * {
@@ -11,6 +14,11 @@
     text-decoration: none;
     list-style: none;
     font-family: "NTR", sans-serif;
+    scroll-behavior: smooth;
+}
+
+h3{
+    font-size: var(--sections-titles);
 }
 
 /* HEADER //////////////////////////*/
@@ -18,6 +26,8 @@
     display: flex;
     justify-content: center;
     background-color: #006691;
+    position: sticky;
+    top: 0;
 }
 
 nav{
@@ -31,10 +41,20 @@ nav{
     gap: 3vw;
 }
 
+#nav-links a:hover{
+    color: var(--bg-color-secondary);
+    transition: 500ms;
+}
+
+#nav-links a:active{
+    background-color: #fff;
+}
+
 #nav-links a{
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--bg-color-primary);
+    padding: 0 0.5em 0 0.5em;
 }
 
 #logo{
@@ -97,7 +117,7 @@ nav{
     padding: 10vh;
 }
 .quien-soy hr{
-    background-color: RGB(44, 62, 80);
+    background-color: var(--gray-color-font);
 }
 
 .quien-soy span{
@@ -105,7 +125,6 @@ nav{
 }
 
 .quien-soy h3{
-    font-size: var(--sections-titles);
     color: var(--primary-font-color);
 }
 
@@ -122,6 +141,73 @@ nav{
     width: 100%;
 }
 
+/* SECTION HABILIDADES ////////////////////////// */
+.habilidades{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.habilidades hr{
+    background-color: var(--gray-color-font);
+}
+
+.habilidades h3{
+    color: var(--gray-color-font);
+}
+
+.habilidades .icon-divider{
+    color: var(--gray-color-font);
+}
+
+.habilidades p{
+    font-size: 1.3rem;
+    padding-bottom: 5em;
+}
+
+
+
+
+
+/* SECTION PROYECTOS //////////////////////////// */
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7vh;
+    background-color: var(--bg-color-secondary);
+}
+.proyectos h3{
+    color: var(--bg-color-primary);
+}
+
+.proyectos hr{
+    color: var(--bg-color-primary);
+}
+
+.proyectos span{
+    color: var(--bg-color-primary);
+}
+
+#proyectos-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    grid-template-rows: repeat(2, 200px);
+    justify-content: center;   
+    padding: 3rem;
+    gap: 4em;
+}
+
+#proyectos-grid h4{
+    color: var(--bg-color-primary);
+    justify-self: center;
+}
+
+.wrap-single-proyect{
+    border: solid black 2px;
+    border-radius: 4%;
+    background-image: url("https://picsum.photos/200/200");
+}
 
 
 
